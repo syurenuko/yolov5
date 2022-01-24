@@ -127,7 +127,7 @@ class Model(nn.Module):
 
     def _forward_augment(self, x):
         img_size = x.shape[-2:]  # height, width
-        s = [1, 0.8, 1.2]  # scales
+        s = [1, 0.9, 0.8]  # scales
         f = [None, 3, None]  # flips (2-ud, 3-lr)
         y = []  # outputs
         for si, fi in zip(s, f):
